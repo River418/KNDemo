@@ -1,0 +1,2 @@
+include ':app',":multiplatform-logic"
+rootProject.name='KNDemo'
