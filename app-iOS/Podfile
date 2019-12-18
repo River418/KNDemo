@@ -1,0 +1,8 @@
+# Either use_frameworks! or use_modular_headers! must be specified.
+use_frameworks!
+
+platform :ios, '11.0'
+
+target 'KNDemo' do
+    pod 'multiplatform_utils', :path => '../multiplatform-utils'
+end

@@ -61,7 +61,7 @@ kotlin{
 
     cocoapods{
         summary="multiplatform-utils"
-        homepage="https://github.com/River418/KNDemo//multiplatform-utils"
+        homepage="https://github.com/River418/KNDemo/multiplatform-utils"
         pod("MMKV")
     }
 

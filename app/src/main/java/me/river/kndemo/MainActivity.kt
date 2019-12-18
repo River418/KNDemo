@@ -6,12 +6,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 import me.river.kndemo.logic.getPlatform
 import me.river.kndemo.logic.getUser
 import me.river.kndemo.logic.setUser
+import me.river.kndemo.utils.MMKV
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        MMKV.initialize(this)
         //头部textview，显示平台信息
         platformTV.text = getPlatform()
 

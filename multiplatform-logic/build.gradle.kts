@@ -60,16 +60,18 @@ kotlin{
     //common目录为KN跨平台公共代码路径，及Android和iOS项目公用代码
     sourceSets["commonMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib-common")
+        implementation(project(":multiplatform-utils"))
     }
 
     //为Android项目添加库依赖
     sourceSets["androidMain"].dependencies {
         implementation("org.jetbrains.kotlin:kotlin-stdlib")
+        implementation(project(":multiplatform-utils"))
     }
 
     //为iOS项目添加库依赖，此处暂时留空。后面我们会用到
     sourceSets["iOSMain"].dependencies {
-
+        implementation(project(":multiplatform-utils"))
     }
 
     //common和iOS分别生命测试代码目录及添加相应依赖
